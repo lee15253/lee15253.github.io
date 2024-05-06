@@ -218,3 +218,14 @@ span.highlight {
     max-width: 22%;
     margin-right: auto;
 }
+
+@media screen and (max-width: 576px) {
+    .custom-col-sm-3{
+      width: 100%;
+      max-width: 200px;
+      margin: auto;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
