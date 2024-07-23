@@ -130,6 +130,10 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.highlight {
+    background-color: #ffffd0;
+  }
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -218,3 +222,14 @@ span.highlight {
     max-width: 22%;
     margin-right: auto;
 }
+
+@media screen and (max-width: 576px) {
+    .custom-col-sm-3{
+      width: 100%;
+      max-width: 300px;
+      margin: auto;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
