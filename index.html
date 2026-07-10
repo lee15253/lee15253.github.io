@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="pictures/personal_round.png">
+  <link rel="icon" type="image/png" href="pictures/profile.png">
 
 </head>
 
@@ -51,8 +51,13 @@
           Hello! I am a Ph.D student at KAIST AI, advised by <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>. <br> 
         </p>
         <p>
-          I am interested in reinforcement learning and robotics. 
+          I am interested in reinforcement learning and robotics.
           My current research is focused on utilizing pre-trained foundational models for visuo-motor control.
+        </p>
+        <p>
+          Previously, I was an AI research intern at <a href="https://ai.neuromeka.com/">Neuromeka</a>,
+          where I worked on RL-based robotic grasping, mentored by
+          <a href="https://scholar.google.com/citations?user=6Htb7swAAAAJ&hl=en">Joonho Lee</a>.
         </p>
 
         <p style="text-align:center">
@@ -77,6 +82,7 @@
     <div class="row">
       <p>
         <ul>
+          <li><b>06.2026.</b> 1 robotics paper accepted @ IROS'26: <a href="#iros2026hamster">3D HAMSTER</a>.
           <li><b>05.2024.</b> 1 RL papers accepted @ ICML'24: <a href="#icml2024coin">CoIn</a>.
           <li><b>09.2023.</b> 1 RL papers accepted @ NeurIPS'23: <a href="#neurips2023disco-dance">DISCO-DANCE</a>.
         </ul>
@@ -88,6 +94,69 @@
   <div class="container">
     <div class="row section-heading-rows">
       <h4>Publications</h4>
+    </div>
+
+    <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/preprint2026pointmapvla.png" alt="preprint2026pointmapvla" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <br>
+        <papertitle id="preprint2026pointmapvla">
+            See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models
+        </papertitle>
+        <br>
+        <strong>Byungkun Lee*</strong>,
+        <a href="https://godnpeter.github.io">Dongyoon Hwang*</a>,
+        <a href="https://pmh9960.github.io/">Minho Park</a>,
+        <a href="https://joonleesky.github.io">Hojoon Lee</a>,
+        <a href="https://k00dj-19.github.io/">Dongjin Kim</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+        (* Equal contribution)
+        <br>
+        <em>Preprint</em>.
+        <br><br>
+        <p style="margin-top: -1%;">
+            We express RGB-D observations as robot-centric pointmaps, dense image-form 3D geometry
+            in the frame where actions are defined, making VLA manipulation policies robust to
+            camera viewpoint variation.
+        </p>
+      </div>
+    </div>
+
+    <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/preprint2026hamster.gif" alt="iros2026hamster" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <br>
+        <a href="https://davian-robotics.github.io/3D_HAMSTER/" id="iros2026hamster">
+            <papertitle>
+                3D HAMSTER: Hierarchical VLAs through 3D Trajectory Guidance
+            </papertitle>
+        </a>
+        <br>
+        <a href="https://godnpeter.github.io">Dongyoon Hwang*</a>,
+        <strong>Byungkun Lee*</strong>,
+        <a href="https://k00dj-19.github.io/">Dongjin Kim</a>,
+        <a href="https://github.com/Whit3Snow">Hyojin Jang</a>,
+        <a href="https://myyzzzoooo.github.io/">Hoiyeong Jin</a>,
+        <a href="https://moon1x21.github.io/">Jueun Mun</a>,
+        <a href="https://pmh9960.github.io/">Minho Park</a>,
+        <a href="https://joonleesky.github.io">Hojoon Lee</a>,
+        <a href="https://mynsng.github.io/">Hyunseung Kim</a>,
+        <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>.
+        (* Equal contribution)
+        <br>
+        <em>IROS'26</em>.
+        <br>
+        <a href="https://davian-robotics.github.io/3D_HAMSTER/">project page</a> /
+        <a href="https://arxiv.org/abs/2606.31329">arXiv</a>
+        <br><br>
+        <p style="margin-top: -1%;">
+            A hierarchical VLA framework that guides low-level action policies with 3D trajectory predictions.
+        </p>
+      </div>
     </div>
 
     <div class="row common-rows" style="margin-top: 3%">
