@@ -1,0 +1,6 @@
+@inproceedings{kim2024dodont,
+  title={Do's and Don'ts: Learning Desirable Skills with Instruction Videos},
+  author={Kim, Hyunseung and Lee, Byungkun and Lee, Hojoon and Hwang, Dongyoon and Kim, Donghu and Choo, Jaegul},
+  booktitle={NeurIPS},
+  year={2024}
+}
