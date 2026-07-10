@@ -233,3 +233,88 @@ span.highlight {
       padding-bottom: 10px;
     }
   }
+
+/* =========================================================
+   Work experience (joonleesky.github.io 스타일)
+   ========================================================= */
+.experience-section .section-heading-rows {
+  margin-left: 0 !important;
+  margin-top: 36px !important;
+  margin-bottom: 10px !important;
+}
+
+.experience-section .work-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0 !important;
+}
+
+.experience-section .work-logo-col {
+  display: flex;
+  flex: 0 0 22%;
+  max-width: 22%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 32px;
+}
+
+.experience-section .work-text-col {
+  position: relative;
+  top: -2px;
+  display: flex;
+  flex: 0 0 76%;
+  max-width: 76%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 15px;
+}
+
+.experience-section .work-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+}
+
+.experience-section .work-logo {
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+
+.experience-section ul {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: -1.5em;
+}
+
+@media screen and (max-width: 576px) {
+  .experience-section .work-row {
+    display: block;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .experience-section .work-logo-col,
+  .experience-section .work-text-col {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .experience-section .work-text-col {
+    top: 0;
+  }
+
+  .experience-section .work-logo-box {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
