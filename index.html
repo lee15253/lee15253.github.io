@@ -49,7 +49,8 @@
           <!-- <a href="data/hojoonlee202405cv.pdf">CV 수정</a> &nbsp/&nbsp -->
           <a href="https://scholar.google.com/citations?hl=en&user=RFjZjzkAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> &nbsp/&nbsp
           <a href="https://www.linkedin.com/in/bkleekaist/">LinkedIn</a> &nbsp/&nbsp
-          <a href="https://github.com/lee15253/">Github</a>
+          <a href="https://github.com/lee15253/">Github</a> &nbsp/&nbsp
+          <a href="https://x.com/Byungkun_Lee">Twitter</a>
         </p>
         
       </div>
@@ -82,8 +83,15 @@
     <div class="row section-heading-rows">
       <h4>Publications</h4>
     </div>
+    <div class="row" style="margin-top: 6px;">
+      <p style="margin-bottom: 0;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" id="pub-sel-btn" onclick="showPubs('selected')">Selected</a>
+        &nbsp;/&nbsp;
+        <a href="javascript:void(0)" id="pub-all-btn" onclick="showPubs('all')">All</a>
+      </p>
+    </div>
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row pub-selected" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/preprint2026pointmapvla.png" alt="preprint2026pointmapvla" class="paper-images">
       </div>
@@ -114,7 +122,7 @@
       </div>
     </div>
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/preprint2026pam.png" alt="preprint2026pam" class="paper-images">
       </div>
@@ -147,7 +155,7 @@
       </div>
     </div>
 
-  <div class="row common-rows" style="margin-top: 3%">
+  <div class="row common-rows pub-row pub-selected" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/preprint2026hamster.gif" alt="iros2026hamster" class="paper-images">
       </div>
@@ -182,7 +190,7 @@
       </div>
     </div>
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/rlc2026vsimba.png" alt="rlc2026vsimba" class="paper-images">
       </div>
@@ -214,7 +222,7 @@
       </div>
     </div>
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
           <img src="pictures/neurips2024dodont.png" alt="neurips2024dodont" class="paper-images">
       </div>
@@ -247,7 +255,7 @@
     </div>
 
     
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row pub-selected" style="margin-top: 3%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/icml2024coin.png" alt="icml2024coin" class="paper-images">
     </div>
@@ -280,7 +288,7 @@
     </div>
 
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/neurips2023disco-dance.png" alt="neurips2023disco-dance" class="paper-images">
     </div>
@@ -315,7 +323,7 @@
     </div>
     </div>
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/icml2023simtpr.png" alt="icml2023simtpr" class="paper-images">
     </div>
@@ -348,7 +356,7 @@
     </div>
 
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
     <div class="col-xs-12 custom-col-sm-3 left-column">
         <img src="pictures/cikm2023strap.png" alt="cikm2023strap" class="paper-images">
     </div>
@@ -379,7 +387,7 @@
     </div>
     </div>
 
-    <div class="row common-rows" style="margin-top: 3%">
+    <div class="row common-rows pub-row" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
             <img src="pictures/www2022draftrec.png" alt="www2022draftrec" class="paper-images">
         </div>
@@ -505,6 +513,16 @@
       </div>
     </div>
   </div>
+<script>
+function showPubs(mode) {
+  document.querySelectorAll('.pub-row').forEach(function (r) {
+    r.style.display = (mode === 'all' || r.classList.contains('pub-selected')) ? '' : 'none';
+  });
+  document.getElementById('pub-sel-btn').style.fontWeight = (mode === 'selected') ? '700' : '400';
+  document.getElementById('pub-all-btn').style.fontWeight = (mode === 'all') ? '700' : '400';
+}
+showPubs('selected');
+</script>
 </body>
 
 </html>
